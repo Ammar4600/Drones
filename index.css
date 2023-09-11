@@ -1,0 +1,273 @@
+@font-face {
+    font-family: head;
+    src: url(GeneralSans-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "head";
+}
+
+html body{
+    height: 100vh;
+    width: -100%;
+}
+
+#main{
+
+}
+
+#main video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+#section1{
+    /* background-color: red; */
+    height: 100px;
+    display: flex;
+    justify-content: center; 
+    position: relative;
+     align-items: center;
+}
+
+#section1 #navbar{
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.288);
+    transform: translateY(13px);
+    padding: 21px;
+    border-radius: 11px;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.068);
+}
+
+#navbar .menu{
+    display: flex;
+    gap: 3.4vw;
+}
+
+#navbar .menu  a{
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2vw;
+    transition: 0.9s all;
+}
+
+#navbar .last-elm a{
+    text-decoration: none;
+    background-color: white;
+    color: blue;
+    padding: 1vw 1.8vw;
+    border-radius: 4px;
+    font-size: 1.5vw;
+    transition: 0.9s all;
+}
+
+#navbar .last-elm i{
+    font-size: 1.7vw;
+    padding: 0px 1.5vw;
+}
+.logo img{
+    transition: 1s all;
+    cursor: pointer;
+}
+
+/* Page 1 Section 2 Starts here/ */
+#section2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 84vh;
+}
+#section2 .div1{
+    transform: translateY(72px);
+}
+#section2 .div2 {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 20px;
+    overflow: hidden;
+}
+#section2 .div2 h4{
+    font-size: 19px;
+    margin-top: 165px;
+    font-weight: 100;
+}
+#section2 .div2 h3{
+    border: 1px solid white;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    margin-top: 61px;
+    color: black;
+    cursor: pointer;
+    gap: 1vw;
+}
+#section2 .div1 h1{
+    font-size: 7vw;
+}
+#section2 .div2 i{
+    font-size: 1.5vw;
+    color: blue;
+    font-weight: bolder;
+}
+
+
+/* ? PAGE 2  part 1 STARTS HERE/ */
+#page2{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#first-p{
+    height: 100%;
+    width: 100%;
+}
+.bigdiv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+.bigdiv img{
+    HEIGHT: 23VW;
+
+}
+
+.textdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding-right: 7vw;
+}
+
+
+.row1{
+    display: flex;
+    gap: 20px;
+    
+}
+.row2{
+    gap: 20px;
+    display: flex;
+}
+.row1 .div{
+    border: 1px solid white;
+    height: 36vh;
+    padding: 1vw;
+    transition: 1S ALL;
+}
+.row2 .div{
+    transition: 1S ALL;
+    border: 1px solid white;
+    height: 36vh;
+    padding: 22px;
+}
+.row1 .div h1{
+    font-size: 3vw;
+}
+
+.row2 .div h1{
+    font-size: 3vw;
+}
+
+/* PAGE 3 STARTS HERE/4 */
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4vw;
+    padding: 3vw;
+
+}
+#page3 img{
+    height: 35vw;
+    width: 43vw;
+}
+
+#page3 .text{
+    background: blue;
+    padding: 6vh 2vw;
+}
+
+#page3 .sec{
+    display: flex;
+    justify-content: space-between;
+    padding: 8vh 0.2vw;
+}
+
+.sec .div h2{
+    
+    font-size: 4vw;
+    font-weight: 100;
+}
+
+.text>h3{
+    border: 1px solid;
+    background: white;
+    color: blue;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.text i{
+    color: blue;
+    font-size: 2vw;
+}
+
+
+
+/* Hover affect navbar */
+
+.menu a:hover{
+    color: darkblue;
+}
+
+#navbar .last-elm a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.logo img:hover{
+    transform: scaleY(1.5);
+}
+
+
+/* Section 2 Hover effects */
+#section2 .div2 h3:hover{
+    color: darkblue;
+}
+
+/* PAGE 2 PART 1 HOVER EFFECTS  */
+
+.row1 .div:hover{
+    background-color: blue;
+    color: white;
+    transform: translateY(-20PX);
+}
+.row2 .div:hover{
+    background-color: blue;
+    color: white;
+    transform: translateY(-20PX);
+}

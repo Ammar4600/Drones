@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+#main{
+    width: 100%;
+    display: flex;
+}
+.div{
+    margin: 50px;
+    height: 60px;
+    transform: translateX(51vw);
+    width: 50px;
+    background-color: brown;
+}
+.sec{
+    /* position: fixed; */
+    height: 50vh;
+    width: 100%;
+    background-color: green;
+    transform: translateX(-38vw);
+    transform: translate(-33vw, 49vw);
+}
+.sec2{
+    /* position: fixed; */
+    height: 100vh;
+    width: 100%;
+    background-color: darkorchid;
+}
+img{
+   border-radius: 100% 50%; 
+   border:2px solid black
+}
+navbar{
+height: 330px;
+width: 100%;
+background-color: yellow;
+}
+</style>
+<body>
+    <div class="navbar">
+<a href="">a</a>
+    </div>
+<img src="Snapchat-974839020-PhotoRoom.png-PhotoRoom-fotor-2023080322313.png" alt="">
+    <div id="big">
+        <div id="page1">
+            <div id="main">
+                <div class="div"></div>
+                <div class="div"></div>
+                <div class="div"></div>
+                <div class="div"></div>
+                <div class="div"></div>
+                <div class="div"></div>
+                <div class="div"></div>
+                <div class="div"></div>
+                <div class="div"></div>
+                <div class="div"></div>
+            </div>
+            <div class="sec"></div>
+        </div>
+        <div class="sec2"></div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.to(".div",{
+            transform : "translateX(-100vw)",
+            duration:1,
+            scrollTrigger:{
+                trigger:"#page1",
+                scroller:"body",
+                pinSpacing:false,
+                start:"top 0%",
+                end:"top -200%",
+                scrub:9,
+                pin: true,
+                // markers:true,
+            }
+        })
+        gsap.to(".sec",{
+            transform : "translateY(-148%)",
+            transation : 1,
+            duration :5,
+            scrollTrigger:{
+                trigger:"#main .div",
+                scroller:"body",
+                scrub:7,
+                pinSpacing:false,
+                pin: true,
+                start:"top 38%",
+                end:"top 39%",
+                markers:true,
+            }
+        })
+    </script>
+</body>
+</html>
